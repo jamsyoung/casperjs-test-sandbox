@@ -56,8 +56,10 @@ This is a project I use personally to prototype CasperJS things.
 ## Example of test passing
 ![](http://grab.by/kT1k)
 
-The WARN is interesting, maybe it things no tests ran because there were no
+The WARN is interesting, maybe it thinks no tests ran because there were no
 failures?  Unlikely, I probalby have something wrong in my test script.
+
+Note the results are stored in casper-results.xml.
 
 
 
