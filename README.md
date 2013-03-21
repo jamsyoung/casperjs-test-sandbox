@@ -20,7 +20,7 @@ This is a project I use personally to prototype CasperJS things.
         $ curl -O http://phantomjs.googlecode.com/files/phantomjs-1.8.2-macosx.zip
         $ unzip phantomjs-1.8.2-macosx.zip
         $ cd phantomjs-1.8.2-macosx
-        $ sudo ln -sf $PWD/bin/phantomjs /usr/local/bin/phantomjs
+        $ sudo ln -sf `pwd`/bin/phantomjs /usr/local/bin/phantomjs
 
 
 - Install CasperJS: Cross refrence this with the most current version of
@@ -31,7 +31,7 @@ This is a project I use personally to prototype CasperJS things.
         $ git clone git://github.com/n1k0/casperjs.git
         $ cd casperjs
         $ git checkout -f tags/1.0.2
-        $ sudo ln -sf $PWD/bin/casperjs /usr/local/bin/casperjs 
+        $ sudo ln -sf `pwd`/bin/casperjs /usr/local/bin/casperjs 
 
 
 - Confirm things installed correctly.
