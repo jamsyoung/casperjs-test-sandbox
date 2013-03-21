@@ -20,4 +20,4 @@ instructions on how to get your machine setup to execute these tests.
 [1]: https://github.com/n1k0/casperjs
 [2]: http://phantomjs.org
 [3]: https://github.com/ariya/phantomjs
-[4]: /jamsyoung/casperjs-test-sandbox/blob/master/docs/setup.md
+[4]: /docs/setup.md
