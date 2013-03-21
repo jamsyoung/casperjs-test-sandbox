@@ -2,13 +2,6 @@
 This is a project I use personally to prototype CasperJS things.
 
 
-## References
-- [http://casperjs.org][0]
-- [https://github.com/n1k0/casperjs][1]
-- [http://phantomjs.org][2]
-- [https://github.com/ariya/phantomjs][3]
-
-
 ## Setup
 Refer to the [How to setup your development environment][4] page for detailed
 instructions on how to get your machine setup to execute these tests.
@@ -18,6 +11,13 @@ instructions on how to get your machine setup to execute these tests.
 
 - detect-javascript-errors.js - This is a simple script to query a url and check
   if there are any javascript errors returned.
+
+
+## References
+- [http://casperjs.org][0]
+- [https://github.com/n1k0/casperjs][1]
+- [http://phantomjs.org][2]
+- [https://github.com/ariya/phantomjs][3]
 
 
 
