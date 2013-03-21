@@ -14,6 +14,12 @@ Refer to the [How to setup your development environment][4] page for detailed
 instructions on how to get your machine setup to execute these tests.
 
 
+## Scripts
+
+- detect-javascript-errors.js - This is a simple script to query a url and check
+  if there are any javascript errors returned.
+
+
 
 
 [0]: http://casperjs.org
