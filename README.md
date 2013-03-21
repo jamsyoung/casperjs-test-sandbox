@@ -10,6 +10,12 @@ This is a project I use personally to prototype CasperJS things.
 
 
 ## Setup
+- Clone this repository
+
+        $ cd ~/dev
+        $ git clone git://github.com/jamsyoung/casperjs-test-sandbox.git
+
+
 - Install PhantomJS: Cross refrence this with the most current version of
   PhantomJS from [http://phantomjs.org/download.html][5].  Install PhantomJS by
   doing the following:
@@ -31,7 +37,7 @@ This is a project I use personally to prototype CasperJS things.
         $ git clone git://github.com/n1k0/casperjs.git
         $ cd casperjs
         $ git checkout -f tags/1.0.2
-        $ sudo ln -sf `pwd`/bin/casperjs /usr/local/bin/casperjs 
+        $ sudo ln -sf `pwd`/bin/casperjs /usr/local/bin/casperjs
 
 
 - Confirm things installed correctly.
