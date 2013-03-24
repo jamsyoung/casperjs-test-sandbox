@@ -11,8 +11,8 @@ instructions on how to get your machine setup to execute these tests.
 
 - cli-arguments.js - Example of passing in command line arguments
 
-- detect-javascript-errors.js - This is a simple script to query a url and check
-  if there are any javascript errors returned.
+- detect-javascript-errors.js - This is a simple script to query multiple urls
+  and check if there are any javascript errors returned.
 
 - generic-test.js - Example of very basic assert
 
