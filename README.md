@@ -12,6 +12,8 @@ instructions on how to get your machine setup to execute these tests.
 - detect-javascript-errors.js - This is a simple script to query a url and check
   if there are any javascript errors returned.
 
+- googlelinks.js - This is the quickstart on the CasperJS site.
+
 
 ## References
 - [http://casperjs.org][0]
