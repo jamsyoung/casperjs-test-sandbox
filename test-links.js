@@ -48,7 +48,7 @@ function spider(url) {
         var baseUrl = this.getGlobal('location').origin;
         Array.prototype.forEach.call(links, function(link) {
             var newUrl = helpers.absoluteUri(baseUrl, link);
-            if (pendingUrls.indexOf(newUrl) == -1 && visitedUrls.indexOf(newUrl) == -1 && newUrl.indexOf('about:blank')) {
+            if (pendingUrls.indexOf(newUrl) == -1 && visitedUrls.indexOf(newUrl) == -1 && newUrl.indexOf('travel.yahoo.com') == -1) {
                 // casper.echo(casper.colorizer.format('-> Pushed ' + newUrl + ' onto the stack', { fg: 'magenta' }));
                 pendingUrls.push(newUrl);
             }
