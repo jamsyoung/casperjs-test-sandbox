@@ -24,14 +24,15 @@ function spider(url) {
 
         // Set the status style based on server status code
         var status = this.status().currentHTTPStatus;
-        switch(status) {
-            case 200: var statusStyle = { fg: 'green', bold: true }; break;
-            case 404: var statusStyle = { fg: 'red', bold: true }; break;
-             default: var statusStyle = { fg: 'magenta', bold: true }; break;
-        }
+        // switch(status) {
+        //     case 200: var statusStyle = { fg: 'green', bold: true }; break;
+        //     case 404: var statusStyle = { fg: 'red', bold: true }; break;
+        //      default: var statusStyle = { fg: 'magenta', bold: true }; break;
+        // }
 
         // Display the spidered URL and status
-        this.echo(this.colorizer.format(status, statusStyle) + ' ' + url);
+        // this.echo(this.colorizer.format(status, statusStyle) + ' ' + url);
+        console.log(status + ' ' + url);
 
         // Find links present on this page, don't follow secondary links
         if (url === startUrl) {
