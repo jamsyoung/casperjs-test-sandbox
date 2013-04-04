@@ -3,13 +3,13 @@
 /* http://planzero.org/blog/2013/03/07/spidering_the_web_with_casperjs */
 
 // Set the start URL
-var startUrl = 'http://att.yahoo.com/sports/';
+var startUrl = 'http://att.yahoo.com/';
 
 // URL variables
 var visitedUrls = [], pendingUrls = [];
 
 // Create instances
-var casper = require('casper').create({ /* verbose: true, logLevel: 'debug' */ });
+var casper = require('casper').create({ /* verbose: true, logLevel: 'debug'*/ });
 var utils = require('utils')
 var helpers = require('./helpers')
 
@@ -33,7 +33,7 @@ function spider(url) {
         // Display the spidered URL and status
         this.echo(this.colorizer.format(status, statusStyle) + ' ' + url);
 
-        // Find links present on this page, don't follow secondarly links
+        // Find links present on this page, don't follow secondary links
         if (url === startUrl) {
             var links = this.evaluate(function() {
                 var links = [];
@@ -48,7 +48,13 @@ function spider(url) {
         var baseUrl = this.getGlobal('location').origin;
         Array.prototype.forEach.call(links, function(link) {
             var newUrl = helpers.absoluteUri(baseUrl, link);
-            if (pendingUrls.indexOf(newUrl) == -1 && visitedUrls.indexOf(newUrl) == -1 && newUrl.indexOf('travel.yahoo.com') == -1) {
+            if (pendingUrls.indexOf(newUrl) == -1 &&
+                visitedUrls.indexOf(newUrl) == -1 &&
+                newUrl.indexOf('macon.com') == -1 &&
+                newUrl.indexOf('finance.yahoo.com') == -1 &&
+                newUrl.indexOf('javascript:') == -1
+                ) {
+                console.log('parsing: ' + newUrl);
                 // casper.echo(casper.colorizer.format('-> Pushed ' + newUrl + ' onto the stack', { fg: 'magenta' }));
                 pendingUrls.push(newUrl);
             }
