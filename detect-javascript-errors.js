@@ -5,17 +5,9 @@
 var casper = require('casper').create({
         verbose: true,
         logLevel: 'error'
-    }),
-    url = [
-        'http://www.cnn.com/',
-        'http://jamsyoung.com/',
-        'http://www.yahoo.com/'
-    ];
+    });
 
-
-casper.start(url[0], function () { this.echo('Navigating to: ' + url[0] + '\n'); });
-casper.thenOpen(url[1], function () { this.echo('Navigating to: ' + url[1] + '\n'); });
-casper.thenOpen(url[2], function () { this.echo('Navigating to: ' + url[2] + '\n'); });
+casper.start('www.cnn.com', function () { this.echo('Navigating to: ' + url[0] + '\n'); });
 
 
 casper.on('page.error', function (msg, trace) {
