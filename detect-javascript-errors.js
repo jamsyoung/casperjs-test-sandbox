@@ -1,17 +1,19 @@
 /*globals require */
 
-/* usage: casperjs detect-javascript-errors.js */
+/* usage: casperjs detect-javascript-errors.js http://www.cnn.com */
 
 var casper = require('casper').create({
         verbose: true,
         logLevel: 'error'
-    });
+    }),
+    url = casper.cli.args[0];
 
-casper.start('www.cnn.com', function () { this.echo('Navigating to: ' + url[0] + '\n'); });
+// console.log(casper.cli.args);
+
+casper.start(url, function () { this.echo('Navigating to: ' + url + '\n'); });
 
 
 casper.on('page.error', function (msg, trace) {
-    'use strict';
     var errorMessage = 'Error: ' + msg + '\n',
         indent = '     ';
 
@@ -23,7 +25,6 @@ casper.on('page.error', function (msg, trace) {
 
 
 casper.run(function () {
-    'use strict';
     this.test.done();
     this.exit();
 });
